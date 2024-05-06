@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-image: url(./fondo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.login {
+  width: 320px;
+  height: 450px;
+  border: 3px solid black;
+  background: url(https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExYTI0ZmJ5ZHI4YzVqeGg2YXBqa2J6d21jajk5MDBlMjhicWdnM2xrZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/eBo4DqA6Ddeifbflqu/giphy.gif) center center no-repeat;
+  background-size: cover;
+  margin: 30px auto;
+  border-radius: 20px;
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: calc(50vh - 200px);
+  left: calc(50vw - 200px);
+  overflow: hidden;
+}
+
+.login .form {
+  width: 100%;
+  height: 100%;
+  padding: 10px 5px 25px;
+  text-align: center;
+}
+
+.login .form h2 {
+  color: lightblue;
+  text-align: center;
+  font-weight: normal;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 85px;
+  margin-bottom: 80px;
+  background: rgba(255,255,255,.5);
+  border: 1px solid black(255,255,255,.1);
+  padding: 0 15px;
+  border-radius: 5px;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+}
+
+.login .form input {
+  width: calc(100% - 40px);
+  height: 40px;
+  margin-top: 20px;
+  background: rgba(255,255,255,.5) no-repeat; 
+  border: 1px solid black(255,255,255,.1);
+  padding: 10px 10px 10px 15px; 
+  color: black;
+  border-radius: 5px;
+  font-size: 14px;
+  position: relative; 
+}
+
+.light img {
+  width: 20px;
+}
+
+.light{
+  border: none;
+  background: none;
+  cursor: pointer;
+  top: 73%;
+  right: 8%;
+  position: absolute;
+}
+
+.black-background .light img{
+  content: url(./ojo-cruzado.png);
+}
+
+.login .form input:focus {
+  border: 1px solid rgba(255,255,255,.8);
+  outline: none;
+}
+
+::-webkit-input-placeholder {
+    color: black;
+}
+
+button {
+  color: palevioletred;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 7px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.error {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
